@@ -14,9 +14,7 @@ ScriptsOnlyBuild:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
-    - UnityEditor.U2D.IK.IKGizmos
     Unity.2D.Tilemap.Editor.dll:
-    - UnityEditor.Tilemaps.GridBrush
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
     - UnityEditor.Tilemaps.GridPalettes
@@ -63,35 +61,35 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 626}
+      Script: {instanceID: 628}
     - Class: 114
-      Script: {instanceID: 1458}
+      Script: {instanceID: 1460}
     - Class: 114
-      Script: {instanceID: 2128}
+      Script: {instanceID: 2130}
     - Class: 114
-      Script: {instanceID: 2230}
+      Script: {instanceID: 2232}
     - Class: 114
-      Script: {instanceID: 2482}
+      Script: {instanceID: 2484}
     - Class: 114
-      Script: {instanceID: 2682}
+      Script: {instanceID: 2684}
     - Class: 114
-      Script: {instanceID: 2854}
+      Script: {instanceID: 2856}
     - Class: 114
-      Script: {instanceID: 3012}
+      Script: {instanceID: 3014}
     - Class: 114
-      Script: {instanceID: 3088}
+      Script: {instanceID: 3090}
     - Class: 114
-      Script: {instanceID: 3328}
+      Script: {instanceID: 3330}
     - Class: 114
-      Script: {instanceID: 3338}
+      Script: {instanceID: 3340}
     - Class: 114
-      Script: {instanceID: 4092}
+      Script: {instanceID: 3616}
     - Class: 114
-      Script: {instanceID: 4470}
+      Script: {instanceID: 4096}
     - Class: 114
-      Script: {instanceID: 5236}
+      Script: {instanceID: 4474}
     - Class: 114
-      Script: {instanceID: 23340}
+      Script: {instanceID: 5240}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -363,7 +361,7 @@ ScriptsOnlyBuild:
     className: TestResultRendererCallback
   - hash:
       serializedVersion: 2
-      Hash: 640ab73588147e028b9a34d94ff8b29d
+      Hash: 825b619760ffcafeedd4977539100bbe
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerController
@@ -421,6 +419,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TextContainer
+  - hash:
+      serializedVersion: 2
+      Hash: f12fcf35bec0ef2aaf93eee3f0c20f3a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Enemy
   - hash:
       serializedVersion: 2
       Hash: 8aa3d6ccbcb54ee8db6c1229854adaaa
@@ -691,12 +695,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.IK.Runtime.dll
     namespaceName: UnityEngine.U2D.IK
     className: FabrikSolver2D
-  - hash:
-      serializedVersion: 2
-      Hash: f12fcf35bec0ef2aaf93eee3f0c20f3a
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Enemy
   platform: 13
   scenePathNames:
   - Assets/Scenes/SampleScene.unity

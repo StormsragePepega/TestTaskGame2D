@@ -15,42 +15,57 @@ public class PlayerController : MonoBehaviour
     public Sprite N;
     public Sprite E;
     public Sprite S;
+    public Sprite Cooked;
     [SerializeField] private GameObject _bomb;
     [SerializeField] private int _capacityBomb;
     [SerializeField] private int _powerBomb=3;
-
+    [SerializeField] private bool _isAlive;
 
     [SerializeField] private float _movementSpeed=2f;
     private Vector2 _moveInput;
     private void FixedUpdate()
     {
-        _rigidbody.velocity = new Vector3(joystick.Horizontal * _movementSpeed, joystick.Vertical * _movementSpeed, 0);
-        if (Math.Abs(joystick.Vertical) > Math.Abs(joystick.Horizontal))
+        
+        if(_isAlive)
         {
-            if (joystick.Vertical > 0)
+            _rigidbody.velocity = new Vector3(joystick.Horizontal * _movementSpeed, joystick.Vertical * _movementSpeed, 0);
+            if (Math.Abs(joystick.Vertical) > Math.Abs(joystick.Horizontal))
             {
-                _spriteRend.sprite = N;
+                if (joystick.Vertical > 0)
+                {
+                    _spriteRend.sprite = N;
+                }
+                else if (joystick.Vertical < 0)
+                {
+                    _spriteRend.sprite = S;
+                }
             }
-            else if (joystick.Vertical < 0)
+            else
             {
-                _spriteRend.sprite = S;
-            }
-        }
-        else
-        {
-            if (joystick.Horizontal < 0)
-            {
-                _spriteRend.sprite = W;
-            }
-            else if (joystick.Horizontal > 0)
-            {
-                _spriteRend.sprite = E;
+                if (joystick.Horizontal < 0)
+                {
+                    _spriteRend.sprite = W;
+                }
+                else if (joystick.Horizontal > 0)
+                {
+                    _spriteRend.sprite = E;
+                }
             }
         }
     }
 
 
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Explosion")
+        {
+            _isAlive = false;
+            _spriteRend.sprite = Cooked;
+            
 
+        }
+
+    }
     public void AddBomb( int value)
     {
         _capacityBomb += value;

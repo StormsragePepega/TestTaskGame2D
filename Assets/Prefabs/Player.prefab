@@ -152,7 +152,9 @@ MonoBehaviour:
   N: {fileID: 21300000, guid: 9ff9123ca7fb0104bbc278278a61494e, type: 3}
   E: {fileID: 21300000, guid: d5847a888dad7814ab508bd5c9235348, type: 3}
   S: {fileID: 21300000, guid: ae59e38fbda48324c91bcb4f668693de, type: 3}
+  Cooked: {fileID: 21300000, guid: f866c32b9702b3744b836e824273fd86, type: 3}
   _bomb: {fileID: 3337123897995152999, guid: 0b37235753a6a0a45a2016669a3c2eb8, type: 3}
   _capacityBomb: 1
   _powerBomb: 2
+  _isAlive: 1
   _movementSpeed: 4
